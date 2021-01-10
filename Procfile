@@ -1,1 +1,1 @@
-web: gunicorn songbookAPI_project.wsgi --log-file -
+web: gunicorn songbookAPI_project.songbookAPI_project.wsgi --log-file -

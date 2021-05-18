@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista piosenek</title>
+</head>
+<body>
+    {% for song in songs %}
+    <h2>
+        <a href="{{ song.get_absolute_url }}">
+            {{ song }}
+        </a>
+    </h2>
+
+    {% endfor %}
+</body>
+</html>

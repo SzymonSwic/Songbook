@@ -1,8 +1,9 @@
-from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer
+
 from .models import Song
 
 
-class SongSerializer(serializers.HyperlinkedModelSerializer):
+class SongSerializer(ModelSerializer):
     class Meta:
         model = Song
         fields = ('title', 'author', 'lyrics', 'pub_date')

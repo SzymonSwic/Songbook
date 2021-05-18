@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usunięcie piosenki</title>
+</head>
+<body>
+    <form method="post">{% csrf_token %}
+        <h1>Czy na pewno chcesz usunąć piosenkę: "{{ song }}"?</h1>
+        <p><input type="submit" value="Tak"> <a href="../">Anuluj</a></p>
+    </form>
+</body>
+</html>

@@ -12,4 +12,19 @@
         {{ song.lyrics|linebreaks }}
     </p>
 </body>
+
+<a href="{% url 'song_update' pk=song.id %}">
+    <button type="button">Edit this song</button>
+</a>
+<br>
+<br>
+<a href="{% url 'song_delete' pk=song.id %}">
+    <button type="button">Delete this song</button>
+</a>
+<br>
+<br>
+<a href="{% url 'song_list' %}">
+    <button type="button">Back to list</button>
+</a>
+
 </html>

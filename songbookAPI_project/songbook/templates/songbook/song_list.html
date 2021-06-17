@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Lista piosenek{% endblock %}
+{% block content %}
+    {% for song in songs %}
+    <h2>
+        <a href="{{ song.get_absolute_url }}">
+            {{ song }}
+        </a>
+    </h2>
+
+    {% endfor %}
+
+    <a href="{% url 'song_create' %}">
+        <button type="button">Add new song</button>
+    </a>
+{% endblock %}

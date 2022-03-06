@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['plomyk-songbook-api.herokuapp.com']
+# ALLOWED_HOSTS = ['plomyk-songbook-api.herokuapp.com']
 
 
 # Application definition
@@ -136,6 +136,3 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
-
-# Activate Django-Heroku.
-django_heroku.settings(locals())
